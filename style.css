@@ -114,19 +114,82 @@ image {
   margin-bottom: 2rem;
 }
 
-.cronometro{
+.cronometro {
   display: flex;
   justify-content: space-around;
 }
 
-.cronometro div h3{
+.cronometro div h3 {
   font-size: 7vw;
   color: #fff;
-  font-family: 'roboto';
+  font-family: "roboto";
 }
 .cronometro div {
   font-size: 2vw;
   color: #21eb00;
-  font-family: 'roboto';
+  font-family: "roboto";
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .titulo {
+    font-size: 6vh;
+  }
+
+  .msg {
+    font-size: 4vh;
+  }
+
+  .data {
+    font-size: 4vh;
+    border-radius: 30px;
+    width: 70%;
+  }
+
+  .iniciar {
+    width: 70%;
+    font-size: 4vh;
+  }
+
+  /* contador */
+  .body-contador {
+    background: #000;
+    padding-top: 2rem;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .container::after,
+  .container::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .titulo-contador {
+    font-size: 6vh;
+  }
+
+  .reiniciar {
+    width: 40%;
+    font-size: 4vh;
+  }
+
+  .faltam {
+    font-size: 10vh;
+  }
+
+  .cronometro {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .cronometro div h3 {
+    font-size: 8vh;
+  }
+  .cronometro div {
+    font-size: 3vh;
+  }
 }
